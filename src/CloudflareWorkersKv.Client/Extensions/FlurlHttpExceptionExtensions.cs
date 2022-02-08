@@ -18,7 +18,7 @@ namespace CloudflareWorkersKv.Client.Extensions
                 throw new JsonDeserializationException(exception.InnerException);
             }
 
-            var response = await exception.Call.Response.Content.ReadAsStringAsync();
+            var response = await exception.Call.Response.ResponseMessage.Content.ReadAsStringAsync();
             var errorResponse = JsonConvert.DeserializeObject<CloudflareErrorResponse>(response);
             var authenticationError = errorResponse.Errors.FirstOrDefault(x => x.Code == 10000);
 
