@@ -5,7 +5,7 @@
     <Description>Cloudflare Workers KV Client for .NET</Description>
     <PackageTags>cloudflare;workers;kv;client</PackageTags>
     <Version>1.1.0</Version>
-    <TargetFrameworks>net5.0</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <PackageLicenseUrl>https://raw.githubusercontent.com/aozd4v/cloudflare-workers-kv-dotnet-client/master/LICENSE</PackageLicenseUrl>
     <PackageId>CloudflareWorkersKv.Client</PackageId>
     <AssemblyName>CloudflareWorkersKv.Client</AssemblyName>
@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Flurl.Http" Version="3.2.0" />
+    <PackageReference Include="Flurl.Http" Version="3.2.2" />
   </ItemGroup>
 
 </Project>
